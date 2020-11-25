@@ -1,0 +1,812 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// width sizes
+$width-100: 100%;
+$width-50: 50%;
+$width-25: 25%;
+$width-75: 75%;
+$width-60: 60%;
+//font sizes
+$font-8: 8px;
+$font-16: 16px;
+$font-12: 12px;
+$font-18: 18px;
+$font-14: 14px;
+$font-24: 24px;
+$font-38: 38px;
+$font-10: 10px;
+
+//colors
+$green: #25cd71;
+$grey: #86a1ae;
+$black: #000;
+$white: #ffffff;
+$blue: #3581fd;
+$anchorBlue: #0ad0f4;
+
+.w-100 {
+  width: $width-100;
+}
+.w-60 {
+  width: $width-60;
+}
+
+body {
+  font-family: sans-serif;
+}
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+@mixin font($font) {
+  font-size: $font;
+}
+
+@mixin justifyAlign($align) {
+  justify-content: $align;
+}
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+%flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+%container {
+  width: $width-100;
+  max-width: 1140px;
+}
+%bold {
+  font-weight: 600;
+}
+%button {
+  width: $width-100;
+  background: $white;
+  padding: 1rem;
+  @extend %borderRadius;
+  margin-bottom: 1.5rem;
+  border: none;
+  font-size: 17px;
+  outline: none;
+  cursor: pointer;
+}
+%borderRadius {
+  box-shadow: 0px 0px 2px $grey;
+  border-radius: 0.25rem;
+}
+.wrap {
+  width: $width-100;
+  @extend %flex;
+  @include justifyAlign(center);
+}
+header {
+  @extend %flex;
+  @extend %container;
+  @include justifyAlign(space-between);
+  padding: 30px 0 20px;
+  .bookName {
+    @extend %flex;
+    align-items: center;
+    img {
+      max-width: 25px;
+      height: 25px;
+    }
+    span {
+      @extend %bold;
+      padding-left: 10px;
+      @include font($font-24);
+    }
+  }
+}
+.imgRes {
+  max-width: $width-100;
+  height: auto;
+}
+section {
+  width: $width-100;
+  @extend %flex;
+  @include justifyAlign(center);
+}
+.firstSection {
+  position: relative;
+  background-image: linear-gradient(to bottom, #d6f4fa, transparent);
+  .particleLeft,
+  .particleRight {
+    position: absolute;
+    top: 0px;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  .particleLeft {
+    left: 0px;
+  }
+  .particleRight {
+    right: 0px;
+  }
+  .firstSectionContent {
+    @extend %container;
+    @extend %flex;
+    @include justifyAlign(space-between);
+    padding-top: 5rem;
+    .contentLeft {
+      width: 40%;
+      color: $grey;
+      h1 {
+        text-transform: uppercase;
+        @include font($font-24);
+        margin: 1rem 0 2rem 0;
+        color: $black;
+      }
+      .headAfter {
+        @include font($font-16);
+        @extend %flex;
+        margin-bottom: 1.5rem;
+      }
+      ul {
+        padding-left: 0px;
+        @extend %flex;
+        li {
+          list-style-type: none;
+          padding: 0 2rem;
+          margin-bottom: 1.5rem;
+          position: relative;
+          width: 50%;
+          float: left;
+          @include font($font-12);
+
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+          }
+          &::before {
+            @include widthHeight(18px, 18px);
+            background: $green;
+            border-radius: 50%;
+            z-index: 2;
+            bottom: 0;
+          }
+          &::after {
+            border-left: solid 2px #fff;
+            border-bottom: solid 2px #fff;
+            z-index: 2;
+            bottom: 7px;
+            left: 4px;
+            @include widthHeight(7px, 3px);
+            @include transform(rotate(-45deg));
+          }
+        }
+      }
+      .contInclude {
+        margin-top: 1rem;
+      }
+      .logoWithPass {
+        color: $black;
+        @include font($font-38);
+        margin: 1rem 0 2rem;
+        position: relative;
+        img {
+          position: relative;
+          top: 15px;
+        }
+      }
+      .getAccess {
+        color: $black;
+        @extend %bold;
+        @include font($font-14);
+        a {
+          color: $anchorBlue;
+        }
+      }
+    }
+    .contentRight {
+      width: 40%;
+      .payLabel {
+        @extend %flex;
+        @include justifyAlign(space-between);
+        position: relative;
+        background: $white;
+        padding: 1rem;
+        @extend %borderRadius;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+        input {
+          z-index: 9;
+          opacity: 0;
+        }
+        label {
+          @include widthHeight($width-100, $width-100);
+          position: absolute;
+          left: 0;
+          top: 0;
+          cursor: pointer;
+        }
+        .radioBox {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          border: solid 2px $grey;
+          border-radius: 50%;
+          font-size: 0px;
+          top: 40%;
+          left: 3%;
+          &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: $green;
+            border-radius: 50%;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            display: none;
+          }
+        }
+        label input:checked ~ .radioBox {
+          border: solid 2px $green;
+        }
+        label input:checked ~ .radioBox {
+          &::before {
+            display: block;
+          }
+        }
+        .payLabel-left {
+          padding-left: 2rem;
+          h3 {
+            @include font($font-18);
+            position: relative;
+            margin-bottom: 0.5rem;
+            img {
+              max-width: 25px;
+              position: relative;
+              top: 5px;
+            }
+          }
+          p {
+            @include font($font-12);
+            color: $grey;
+          }
+        }
+        .payLabel-right {
+          text-align: right;
+          p:first-child {
+            margin-bottom: 1rem;
+            span:first-child {
+              @include font($font-12);
+              color: $grey;
+              padding-right: 0.5rem;
+              position: relative;
+              &::before {
+                content: "";
+                position: absolute;
+                width: 95%;
+                height: 1px;
+                background: $grey;
+                transform: rotate(-8deg);
+                bottom: 8px;
+                left: -2px;
+              }
+            }
+            .discountColor {
+              @include font($font-8);
+              background: $blue;
+              color: $white;
+              padding: 0.2rem 0.5rem;
+              border-radius: 0.2rem;
+            }
+          }
+          p:last-child {
+            @include font($font-12);
+            color: $grey;
+            span {
+              padding-left: 0.5rem;
+              @include font($font-18);
+              @extend %bold;
+              color: $black;
+            }
+          }
+        }
+      }
+      .submitButton {
+        #buyNow {
+          background: $green;
+          color: $white;
+        }
+        button {
+          @extend %button;
+        }
+        p {
+          text-align: center;
+          a {
+            color: $anchorBlue;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.firstSection
+  .firstSectionContent
+  .contentRight
+  .payLabel
+  .payLabel-right
+  p:first-child
+  .discountColorGreen {
+  background: $green;
+}
+.firstSection .firstSectionContent .contentRight .borderGreen {
+  box-shadow: 0px 0px 3px $green;
+}
+
+.secondSection {
+  margin-top: 6rem;
+  .secondSectionContent {
+    @extend %container;
+    h4 {
+      @include font($font-18);
+    }
+    .allBox {
+      @extend %flex;
+      @include justifyAlign(space-between);
+      margin-top: 2rem;
+      div {
+        p {
+          @include font($font-14);
+          color: $grey;
+        }
+        h4 {
+          @include font($font-16);
+          margin-bottom: 1rem;
+        }
+      }
+      .item1,
+      .item2,
+      .item3,
+      .item4 {
+        width: 32%;
+        flex: 0 0 32%;
+        padding: 2rem;
+        text-align: center;
+        margin: 0.8rem 0;
+        border-radius: 0.5rem;
+      }
+      .item1 {
+        background: #f5f9f7;
+      }
+      .item2 {
+        background: #f3f6fb;
+      }
+      .item3 {
+        background: #fbf4f3;
+      }
+      .item4 {
+        background: #f4eef3;
+      }
+      .item5 {
+        width: 66%;
+        flex: 0 0 66%;
+        background: #fff5e7;
+        padding: 2rem;
+        margin: 0.8rem 0;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        div:last-child() {
+          padding-left: 3rem;
+        }
+      }
+    }
+  }
+}
+.thirdSection {
+  margin-top: 6rem;
+  .thirdSectionContent {
+    @extend %container;
+    .tabWrap {
+      .sectionHead {
+        margin-bottom: 1.5rem;
+        display: flex;
+        @include justifyAlign(space-between);
+        h3 {
+          @include font($font-18);
+        }
+        p {
+          @include font($font-12);
+          color: $anchorBlue;
+        }
+      }
+      .tab {
+        overflow: hidden;
+        box-shadow: 0px 1px 2px $grey;
+        flex: 0 0 100%;
+        padding: 1rem 0 0;
+        @include justifyAlign(space-between);
+        button {
+          background-color: inherit;
+          display: inline-block;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 5px 20px 15px;
+          @include font($font-14);
+          color: $grey;
+          &:hover {
+            border-bottom: solid 3px $anchorBlue;
+            color: $anchorBlue;
+          }
+        }
+        button.active {
+          border-bottom: solid 3px $anchorBlue;
+          color: $anchorBlue;
+        }
+        .searchDiv {
+          position: relative;
+          padding-right: 1rem;
+          width: 150px;
+          float: right;
+          span {
+            color: $grey;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+          }
+          input {
+            color: $grey;
+            width: 100%;
+            padding: 0.3rem 1rem 0.3rem 1.5rem;
+            border-radius: 0.25rem;
+            border: solid 1px $grey;
+            outline: none;
+          }
+          :-ms-input-placeholder,
+          ::-webkit-input-placeholder,
+          ::placeholder {
+            color: $grey;
+          }
+        }
+      }
+      .contentTab {
+        margin-top: 1rem;
+        .tabcontent {
+          display: none;
+          width: $width-100;
+          margin-top: 1.5rem;
+          .filterTag {
+            span {
+              color: $grey;
+              @include font($font-14);
+              cursor: pointer;
+              margin-right: 1rem;
+            }
+            .active {
+              background: #86a1ae;
+              color: $white;
+              padding: 0.2rem 1rem;
+              border-radius: 0.2rem;
+            }
+          }
+          .testCards {
+            @extend %flex;
+            @include justifyAlign(space-between);
+            padding: 1rem;
+            margin: 1rem 0;
+            @extend %borderRadius;
+            align-items: center;
+            .testCardLeft {
+              h5 {
+                @include font($font-16);
+                color: $black;
+              }
+              .instructions {
+                margin-top: 0.5rem;
+                span {
+                  @include font($font-12);
+                  color: $grey;
+                  padding-right: 1rem;
+                }
+              }
+            }
+            .testCardRight {
+              display: flex;
+              align-items: center;
+              .availFrom {
+                @include font($font-10);
+                color: $grey;
+              }
+              .lockIcon {
+                color: $grey;
+                @include font($font-18);
+              }
+              span {
+                padding-right: 1rem;
+              }
+              .unlockBtn {
+                @extend %button;
+                box-shadow: 0px 0px 2px $anchorBlue;
+                color: $anchorBlue;
+                margin-bottom: 0;
+                @include font($font-16);
+                padding: 0.5rem;
+                width: auto;
+              }
+            }
+          }
+        }
+        .tabcontent:first-child {
+          display: block;
+        }
+        .viewMore {
+          color: $anchorBlue;
+          text-align: center;
+          @include font($font-12);
+          cursor: pointer;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+}
+.fourthSection {
+  .fourthSectionContent {
+    margin-bottom: 6rem;
+    @extend %container;
+    h6 {
+      @include font($font-18);
+      margin-bottom: 1rem;
+    }
+    .faqContent {
+      @extend %flex;
+      .faqLeft {
+        width: 20%;
+        flex: 0 0 20%;
+        .faqTabBtn {
+          padding: 1.5rem 1rem 1.5rem 3rem;
+          @extend %borderRadius;
+          margin-bottom: 0.8rem;
+          position: relative;
+          cursor: pointer;
+          span {
+            position: absolute;
+            color: $grey;
+            top: 20px;
+            left: 15px;
+            @include font($font-24);
+          }
+          h5 {
+            @include font($font-16);
+          }
+          p {
+            @include font($font-14);
+            color: $grey;
+            margin-top: 0.5rem;
+          }
+        }
+        .active {
+          box-shadow: 0px 1px 4px $green;
+          h5,
+          p,
+          span {
+            color: #25cd71;
+          }
+        }
+      }
+      .faqRight {
+        flex: 1 0 0;
+        margin-left: 1rem;
+        padding: 1rem;
+        @extend %borderRadius;
+        .faqTabContent {
+          display: none;
+          &:first-child() {
+            display: block;
+          }
+          .accordion {
+            padding: 1rem;
+            border-bottom: solid 1px $grey;
+            &:last-child {
+              border-bottom: 0px;
+            }
+
+            h4 {
+              font-weight: 100;
+              @include font($font-16);
+              cursor: pointer;
+              span {
+                float: right;
+                transition: 0.3s;
+                color: #c2d0d6;
+              }
+            }
+            .active {
+              @extend %bold;
+              span {
+                @include transform(rotate(180deg));
+                color: $grey;
+              }
+            }
+            .accContent {
+              display: none;
+
+              p {
+                @include font($font-14);
+                color: $grey;
+                margin: 1rem 0;
+                line-height: 1.6;
+              }
+            }
+            .show {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  %container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .firstSection {
+    .firstSectionContent {
+      .contentLeft {
+        width: 55%;
+        ul {
+          li {
+            padding: 0 0 0 2rem;
+          }
+        }
+      }
+    }
+  }
+  .thirdSection {
+    .thirdSectionContent {
+      .tabWrap {
+        width: $width-100;
+      }
+    }
+  }
+  .fourthSection {
+    .fourthSectionContent {
+      .faqContent {
+        .faqLeft {
+          flex: 0 0 30%;
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  %container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .firstSection {
+    .firstSectionContent {
+      padding-top: 2rem;
+      .contentLeft,
+      .contentRight {
+        width: $width-100;
+      }
+      .contentLeft {
+        ul {
+          li {
+            padding: 0 0 0 2rem;
+          }
+        }
+        .contInclude,
+        .logoWithPass,
+        .getAccess,
+        h1,
+        .examLogoWrap,
+        .headAfter {
+          text-align: center;
+        }
+        .getAccess {
+          margin-bottom: 1rem;
+        }
+        .logoWithPass {
+          margin: 0rem 0 2rem;
+          img {
+            position: relative;
+            top: 15px;
+          }
+        }
+      }
+    }
+  }
+  .secondSection {
+    margin-top: 2rem;
+    .secondSectionContent {
+      .allBox {
+        .item1,
+        .item2,
+        .item3,
+        .item4 {
+          width: 100%;
+          flex: 0 0 100%;
+        }
+        .item5 {
+          width: 100%;
+          flex: 0 0 100%;
+          flex-wrap: wrap;
+          justify-content: center;
+          div:last-child() {
+            padding-left: 0rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .thirdSection {
+    .thirdSectionContent {
+      margin-top: 2rem;
+      .tabWrap {
+        width: $width-100;
+        .tab {
+          display: flex;
+          overflow-x: scroll;
+          .searchDiv {
+            display: none;
+          }
+        }
+        .contentTab {
+          .tabcontent {
+            .testCards {
+              .testCardLeft,
+              .testCardRight {
+                width: $width-100;
+                @include justifyAlign(space-between);
+              }
+              .testCardRight {
+                margin-top: 1rem;
+                display: block;
+                .btnLock {
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .fourthSection {
+    .fourthSectionContent {
+      .faqContent {
+        .faqLeft {
+          display: flex;
+          flex-wrap: wrap;
+          flex: 0 0 100%;
+          @include justifyAlign(space-between);
+          .faqTabBtn {
+            flex: 0 0 45%;
+            padding: 0.5rem;
+            text-align: center;
+            span,
+            p {
+              display: none;
+            }
+          }
+        }
+        .faqRight {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

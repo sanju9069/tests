@@ -1,0 +1,1189 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrap,
+header,
+header .bookName,
+section,
+.firstSection .firstSectionContent,
+.firstSection .firstSectionContent .contentLeft .headAfter,
+.firstSection .firstSectionContent .contentLeft ul,
+.firstSection .firstSectionContent .contentRight .payLabel,
+.secondSection .secondSectionContent .allBox,
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards,
+.fourthSection .fourthSectionContent .faqContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+header,
+.firstSection .firstSectionContent,
+.secondSection .secondSectionContent,
+.thirdSection .thirdSectionContent,
+.fourthSection .fourthSectionContent {
+  width: 100%;
+  max-width: 1140px;
+}
+
+header .bookName span,
+.firstSection .firstSectionContent .contentLeft .getAccess,
+.firstSection
+  .firstSectionContent
+  .contentRight
+  .payLabel
+  .payLabel-right
+  p:last-child
+  span,
+.fourthSection
+  .fourthSectionContent
+  .faqContent
+  .faqRight
+  .faqTabContent
+  .accordion
+  .active {
+  font-weight: 600;
+}
+
+.firstSection .firstSectionContent .contentRight .submitButton button,
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .contentTab
+  .tabcontent
+  .testCards
+  .testCardRight
+  .unlockBtn {
+  width: 100%;
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  font-size: 17px;
+  outline: none;
+  cursor: pointer;
+}
+
+.firstSection .firstSectionContent .contentRight .submitButton button,
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .contentTab
+  .tabcontent
+  .testCards
+  .testCardRight
+  .unlockBtn,
+.firstSection .firstSectionContent .contentRight .payLabel,
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards,
+.fourthSection .fourthSectionContent .faqContent .faqLeft .faqTabBtn,
+.fourthSection .fourthSectionContent .faqContent .faqRight {
+  -webkit-box-shadow: 0px 0px 2px #86a1ae;
+  box-shadow: 0px 0px 2px #86a1ae;
+  border-radius: 0.25rem;
+}
+
+.wrap {
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+header {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 30px 0 20px;
+}
+
+header .bookName {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header .bookName img {
+  max-width: 25px;
+  height: 25px;
+}
+
+header .bookName span {
+  padding-left: 10px;
+  font-size: 24px;
+}
+
+.imgRes {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.firstSection {
+  position: relative;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#d6f4fa),
+    to(transparent)
+  );
+  background-image: linear-gradient(to bottom, #d6f4fa, transparent);
+}
+
+.firstSection .particleLeft,
+.firstSection .particleRight {
+  position: absolute;
+  top: 0px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.firstSection .particleLeft {
+  left: 0px;
+}
+
+.firstSection .particleRight {
+  right: 0px;
+}
+
+.firstSection .firstSectionContent {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 5rem;
+}
+
+.firstSection .firstSectionContent .contentLeft {
+  width: 40%;
+  color: #86a1ae;
+}
+
+.firstSection .firstSectionContent .contentLeft h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 1rem 0 2rem 0;
+  color: #000;
+}
+
+.firstSection .firstSectionContent .contentLeft .headAfter {
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.firstSection .firstSectionContent .contentLeft ul {
+  padding-left: 0px;
+}
+
+.firstSection .firstSectionContent .contentLeft ul li {
+  list-style-type: none;
+  padding: 0 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 50%;
+  float: left;
+  font-size: 12px;
+}
+
+.firstSection .firstSectionContent .contentLeft ul li::before,
+.firstSection .firstSectionContent .contentLeft ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.firstSection .firstSectionContent .contentLeft ul li::before {
+  width: 18px;
+  height: 18px;
+  background: #25cd71;
+  border-radius: 50%;
+  z-index: 2;
+  bottom: 0;
+}
+
+.firstSection .firstSectionContent .contentLeft ul li::after {
+  border-left: solid 2px #fff;
+  border-bottom: solid 2px #fff;
+  z-index: 2;
+  bottom: 7px;
+  left: 4px;
+  width: 7px;
+  height: 3px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.firstSection .firstSectionContent .contentLeft .contInclude {
+  margin-top: 1rem;
+}
+
+.firstSection .firstSectionContent .contentLeft .logoWithPass {
+  color: #000;
+  font-size: 38px;
+  margin: 1rem 0 2rem;
+  position: relative;
+}
+
+.firstSection .firstSectionContent .contentLeft .logoWithPass img {
+  position: relative;
+  top: 15px;
+}
+
+.firstSection .firstSectionContent .contentLeft .getAccess {
+  color: #000;
+  font-size: 14px;
+}
+
+.firstSection .firstSectionContent .contentLeft .getAccess a {
+  color: #0ad0f4;
+}
+
+.firstSection .firstSectionContent .contentRight {
+  width: 40%;
+}
+
+.firstSection .firstSectionContent .contentRight .payLabel {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.firstSection .firstSectionContent .contentRight .payLabel input {
+  z-index: 9;
+  opacity: 0;
+}
+
+.firstSection .firstSectionContent .contentRight .payLabel label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.firstSection .firstSectionContent .contentRight .payLabel .radioBox {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: solid 2px #86a1ae;
+  border-radius: 50%;
+  font-size: 0px;
+  top: 40%;
+  left: 3%;
+}
+
+.firstSection .firstSectionContent .contentRight .payLabel .radioBox::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #25cd71;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+
+.firstSection
+  .firstSectionContent
+  .contentRight
+  .payLabel
+  label
+  input:checked
+  ~ .radioBox {
+  border: solid 2px #25cd71;
+}
+
+.firstSection
+  .firstSectionContent
+  .contentRight
+  .payLabel
+  label
+  input:checked
+  ~ .radioBox::before {
+  display: block;
+}
+
+.firstSection .firstSectionContent .contentRight .payLabel .payLabel-left {
+  padding-left: 2rem;
+}
+
+.firstSection .firstSectionContent .contentRight .payLabel .payLabel-left h3 {
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.firstSection
+  .firstSectionContent
+  .contentRight
+  .payLabel
+  .payLabel-left
+  h3
+  img {
+  max-width: 25px;
+  position: relative;
+  top: 5px;
+}
+
+.firstSection .firstSectionContent .contentRight .payLabel .payLabel-left p {
+  font-size: 12px;
+  color: #86a1ae;
+}
+
+.firstSection .firstSectionContent .contentRight .payLabel .payLabel-right {
+  text-align: right;
+}
+
+.firstSection
+  .firstSectionContent
+  .contentRight
+  .payLabel
+  .payLabel-right
+  p:first-child {
+  margin-bottom: 1rem;
+}
+
+.firstSection
+  .firstSectionContent
+  .contentRight
+  .payLabel
+  .payLabel-right
+  p:first-child
+  span:first-child {
+  font-size: 12px;
+  color: #86a1ae;
+  padding-right: 0.5rem;
+  position: relative;
+}
+
+.firstSection
+  .firstSectionContent
+  .contentRight
+  .payLabel
+  .payLabel-right
+  p:first-child
+  span:first-child::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 1px;
+  background: #86a1ae;
+  -webkit-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+  bottom: 8px;
+  left: -2px;
+}
+
+.firstSection
+  .firstSectionContent
+  .contentRight
+  .payLabel
+  .payLabel-right
+  p:first-child
+  .discountColor {
+  font-size: 8px;
+  background: #3581fd;
+  color: #ffffff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.firstSection
+  .firstSectionContent
+  .contentRight
+  .payLabel
+  .payLabel-right
+  p:last-child {
+  font-size: 12px;
+  color: #86a1ae;
+}
+
+.firstSection
+  .firstSectionContent
+  .contentRight
+  .payLabel
+  .payLabel-right
+  p:last-child
+  span {
+  padding-left: 0.5rem;
+  font-size: 18px;
+  color: #000;
+}
+
+.firstSection .firstSectionContent .contentRight .submitButton #buyNow {
+  background: #25cd71;
+  color: #ffffff;
+}
+
+.firstSection .firstSectionContent .contentRight .submitButton p {
+  text-align: center;
+}
+
+.firstSection .firstSectionContent .contentRight .submitButton p a {
+  color: #0ad0f4;
+  text-decoration: none;
+}
+
+.firstSection
+  .firstSectionContent
+  .contentRight
+  .payLabel
+  .payLabel-right
+  p:first-child
+  .discountColorGreen {
+  background: #25cd71;
+}
+
+.firstSection .firstSectionContent .contentRight .borderGreen {
+  -webkit-box-shadow: 0px 0px 3px #25cd71;
+  box-shadow: 0px 0px 3px #25cd71;
+}
+
+.secondSection {
+  margin-top: 6rem;
+}
+
+.secondSection .secondSectionContent h4 {
+  font-size: 18px;
+}
+
+.secondSection .secondSectionContent .allBox {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.secondSection .secondSectionContent .allBox div p {
+  font-size: 14px;
+  color: #86a1ae;
+}
+
+.secondSection .secondSectionContent .allBox div h4 {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.secondSection .secondSectionContent .allBox .item1,
+.secondSection .secondSectionContent .allBox .item2,
+.secondSection .secondSectionContent .allBox .item3,
+.secondSection .secondSectionContent .allBox .item4 {
+  width: 32%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 32%;
+  flex: 0 0 32%;
+  padding: 2rem;
+  text-align: center;
+  margin: 0.8rem 0;
+  border-radius: 0.5rem;
+}
+
+.secondSection .secondSectionContent .allBox .item1 {
+  background: #f5f9f7;
+}
+
+.secondSection .secondSectionContent .allBox .item2 {
+  background: #f3f6fb;
+}
+
+.secondSection .secondSectionContent .allBox .item3 {
+  background: #fbf4f3;
+}
+
+.secondSection .secondSectionContent .allBox .item4 {
+  background: #f4eef3;
+}
+
+.secondSection .secondSectionContent .allBox .item5 {
+  width: 66%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 66%;
+  flex: 0 0 66%;
+  background: #fff5e7;
+  padding: 2rem;
+  margin: 0.8rem 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.secondSection .secondSectionContent .allBox .item5 div:last-child {
+  padding-left: 3rem;
+}
+
+.thirdSection {
+  margin-top: 6rem;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .sectionHead {
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .sectionHead h3 {
+  font-size: 18px;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .sectionHead p {
+  font-size: 12px;
+  color: #0ad0f4;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .tab {
+  overflow: hidden;
+  -webkit-box-shadow: 0px 1px 2px #86a1ae;
+  box-shadow: 0px 1px 2px #86a1ae;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  padding: 1rem 0 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .tab button {
+  background-color: inherit;
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 20px 15px;
+  font-size: 14px;
+  color: #86a1ae;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .tab button:hover {
+  border-bottom: solid 3px #0ad0f4;
+  color: #0ad0f4;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .tab button.active {
+  border-bottom: solid 3px #0ad0f4;
+  color: #0ad0f4;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .tab .searchDiv {
+  position: relative;
+  padding-right: 1rem;
+  width: 150px;
+  float: right;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .tab .searchDiv span {
+  color: #86a1ae;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .tab .searchDiv input {
+  color: #86a1ae;
+  width: 100%;
+  padding: 0.3rem 1rem 0.3rem 1.5rem;
+  border-radius: 0.25rem;
+  border: solid 1px #86a1ae;
+  outline: none;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .tab
+  .searchDiv
+  :-ms-input-placeholder,
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .tab
+  .searchDiv
+  ::-webkit-input-placeholder,
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .tab
+  .searchDiv
+  :-ms-input-placeholder {
+  color: #86a1ae;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .tab
+  .searchDiv
+  :-ms-input-placeholder,
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .tab
+  .searchDiv
+  ::-webkit-input-placeholder,
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .tab
+  .searchDiv
+  ::-ms-input-placeholder {
+  color: #86a1ae;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .tab
+  .searchDiv
+  :-ms-input-placeholder,
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .tab
+  .searchDiv
+  ::-webkit-input-placeholder,
+.thirdSection .thirdSectionContent .tabWrap .tab .searchDiv ::placeholder {
+  color: #86a1ae;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .contentTab {
+  margin-top: 1rem;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent {
+  display: none;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .contentTab
+  .tabcontent
+  .filterTag
+  span {
+  color: #86a1ae;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .contentTab
+  .tabcontent
+  .filterTag
+  .active {
+  background: #86a1ae;
+  color: #ffffff;
+  padding: 0.2rem 1rem;
+  border-radius: 0.2rem;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .contentTab
+  .tabcontent
+  .testCards
+  .testCardLeft
+  h5 {
+  font-size: 16px;
+  color: #000;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .contentTab
+  .tabcontent
+  .testCards
+  .testCardLeft
+  .instructions {
+  margin-top: 0.5rem;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .contentTab
+  .tabcontent
+  .testCards
+  .testCardLeft
+  .instructions
+  span {
+  font-size: 12px;
+  color: #86a1ae;
+  padding-right: 1rem;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .contentTab
+  .tabcontent
+  .testCards
+  .testCardRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .contentTab
+  .tabcontent
+  .testCards
+  .testCardRight
+  .availFrom {
+  font-size: 10px;
+  color: #86a1ae;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .contentTab
+  .tabcontent
+  .testCards
+  .testCardRight
+  .lockIcon {
+  color: #86a1ae;
+  font-size: 18px;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .contentTab
+  .tabcontent
+  .testCards
+  .testCardRight
+  span {
+  padding-right: 1rem;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .contentTab
+  .tabcontent
+  .testCards
+  .testCardRight
+  .unlockBtn {
+  -webkit-box-shadow: 0px 0px 2px #0ad0f4;
+  box-shadow: 0px 0px 2px #0ad0f4;
+  color: #0ad0f4;
+  margin-bottom: 0;
+  font-size: 16px;
+  padding: 0.5rem;
+  width: auto;
+}
+
+.thirdSection
+  .thirdSectionContent
+  .tabWrap
+  .contentTab
+  .tabcontent:first-child {
+  display: block;
+}
+
+.thirdSection .thirdSectionContent .tabWrap .contentTab .viewMore {
+  color: #0ad0f4;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.fourthSection .fourthSectionContent {
+  margin-bottom: 6rem;
+}
+
+.fourthSection .fourthSectionContent h6 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.fourthSection .fourthSectionContent .faqContent .faqLeft {
+  width: 20%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+}
+
+.fourthSection .fourthSectionContent .faqContent .faqLeft .faqTabBtn {
+  padding: 1.5rem 1rem 1.5rem 3rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.fourthSection .fourthSectionContent .faqContent .faqLeft .faqTabBtn span {
+  position: absolute;
+  color: #86a1ae;
+  top: 20px;
+  left: 15px;
+  font-size: 24px;
+}
+
+.fourthSection .fourthSectionContent .faqContent .faqLeft .faqTabBtn h5 {
+  font-size: 16px;
+}
+
+.fourthSection .fourthSectionContent .faqContent .faqLeft .faqTabBtn p {
+  font-size: 14px;
+  color: #86a1ae;
+  margin-top: 0.5rem;
+}
+
+.fourthSection .fourthSectionContent .faqContent .faqLeft .active {
+  -webkit-box-shadow: 0px 1px 4px #25cd71;
+  box-shadow: 0px 1px 4px #25cd71;
+}
+
+.fourthSection .fourthSectionContent .faqContent .faqLeft .active h5,
+.fourthSection .fourthSectionContent .faqContent .faqLeft .active p,
+.fourthSection .fourthSectionContent .faqContent .faqLeft .active span {
+  color: #25cd71;
+}
+
+.fourthSection .fourthSectionContent .faqContent .faqRight {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.fourthSection .fourthSectionContent .faqContent .faqRight .faqTabContent {
+  display: none;
+}
+
+.fourthSection
+  .fourthSectionContent
+  .faqContent
+  .faqRight
+  .faqTabContent:first-child {
+  display: block;
+}
+
+.fourthSection
+  .fourthSectionContent
+  .faqContent
+  .faqRight
+  .faqTabContent
+  .accordion {
+  padding: 1rem;
+  border-bottom: solid 1px #86a1ae;
+}
+
+.fourthSection
+  .fourthSectionContent
+  .faqContent
+  .faqRight
+  .faqTabContent
+  .accordion:last-child {
+  border-bottom: 0px;
+}
+
+.fourthSection
+  .fourthSectionContent
+  .faqContent
+  .faqRight
+  .faqTabContent
+  .accordion
+  h4 {
+  font-weight: 100;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.fourthSection
+  .fourthSectionContent
+  .faqContent
+  .faqRight
+  .faqTabContent
+  .accordion
+  h4
+  span {
+  float: right;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #c2d0d6;
+}
+
+.fourthSection
+  .fourthSectionContent
+  .faqContent
+  .faqRight
+  .faqTabContent
+  .accordion
+  .active
+  span {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  color: #86a1ae;
+}
+
+.fourthSection
+  .fourthSectionContent
+  .faqContent
+  .faqRight
+  .faqTabContent
+  .accordion
+  .accContent {
+  display: none;
+}
+
+.fourthSection
+  .fourthSectionContent
+  .faqContent
+  .faqRight
+  .faqTabContent
+  .accordion
+  .accContent
+  p {
+  font-size: 14px;
+  color: #86a1ae;
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.fourthSection
+  .fourthSectionContent
+  .faqContent
+  .faqRight
+  .faqTabContent
+  .accordion
+  .show {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  header,
+  .firstSection .firstSectionContent,
+  .secondSection .secondSectionContent,
+  .thirdSection .thirdSectionContent,
+  .fourthSection .fourthSectionContent {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .firstSection .firstSectionContent .contentLeft {
+    width: 55%;
+  }
+  .firstSection .firstSectionContent .contentLeft ul li {
+    padding: 0 0 0 2rem;
+  }
+  .thirdSection .thirdSectionContent .tabWrap {
+    width: 100%;
+  }
+  .fourthSection .fourthSectionContent .faqContent .faqLeft {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    width: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  header,
+  .firstSection .firstSectionContent,
+  .secondSection .secondSectionContent,
+  .thirdSection .thirdSectionContent,
+  .fourthSection .fourthSectionContent {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .firstSection .firstSectionContent {
+    padding-top: 2rem;
+  }
+  .firstSection .firstSectionContent .contentLeft,
+  .firstSection .firstSectionContent .contentRight {
+    width: 100%;
+  }
+  .firstSection .firstSectionContent .contentLeft ul li {
+    padding: 0 0 0 2rem;
+  }
+  .firstSection .firstSectionContent .contentLeft .contInclude,
+  .firstSection .firstSectionContent .contentLeft .logoWithPass,
+  .firstSection .firstSectionContent .contentLeft .getAccess,
+  .firstSection .firstSectionContent .contentLeft h1,
+  .firstSection .firstSectionContent .contentLeft .examLogoWrap,
+  .firstSection .firstSectionContent .contentLeft .headAfter {
+    text-align: center;
+  }
+  .firstSection .firstSectionContent .contentLeft .getAccess {
+    margin-bottom: 1rem;
+  }
+  .firstSection .firstSectionContent .contentLeft .logoWithPass {
+    margin: 0rem 0 2rem;
+  }
+  .firstSection .firstSectionContent .contentLeft .logoWithPass img {
+    position: relative;
+    top: 15px;
+  }
+  .secondSection {
+    margin-top: 2rem;
+  }
+  .secondSection .secondSectionContent .allBox .item1,
+  .secondSection .secondSectionContent .allBox .item2,
+  .secondSection .secondSectionContent .allBox .item3,
+  .secondSection .secondSectionContent .allBox .item4 {
+    width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+  .secondSection .secondSectionContent .allBox .item5 {
+    width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .secondSection .secondSectionContent .allBox .item5 div:last-child {
+    padding-left: 0rem;
+    text-align: center;
+  }
+  .thirdSection .thirdSectionContent {
+    margin-top: 2rem;
+  }
+  .thirdSection .thirdSectionContent .tabWrap {
+    width: 100%;
+  }
+  .thirdSection .thirdSectionContent .tabWrap .tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .thirdSection .thirdSectionContent .tabWrap .tab .searchDiv {
+    display: none;
+  }
+  .thirdSection
+    .thirdSectionContent
+    .tabWrap
+    .contentTab
+    .tabcontent
+    .testCards
+    .testCardLeft,
+  .thirdSection
+    .thirdSectionContent
+    .tabWrap
+    .contentTab
+    .tabcontent
+    .testCards
+    .testCardRight {
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .thirdSection
+    .thirdSectionContent
+    .tabWrap
+    .contentTab
+    .tabcontent
+    .testCards
+    .testCardRight {
+    margin-top: 1rem;
+    display: block;
+  }
+  .thirdSection
+    .thirdSectionContent
+    .tabWrap
+    .contentTab
+    .tabcontent
+    .testCards
+    .testCardRight
+    .btnLock {
+    float: right;
+  }
+  .fourthSection .fourthSectionContent .faqContent .faqLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .fourthSection .fourthSectionContent .faqContent .faqLeft .faqTabBtn {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .fourthSection .fourthSectionContent .faqContent .faqLeft .faqTabBtn span,
+  .fourthSection .fourthSectionContent .faqContent .faqLeft .faqTabBtn p {
+    display: none;
+  }
+  .fourthSection .fourthSectionContent .faqContent .faqRight {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
