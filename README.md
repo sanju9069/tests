@@ -1,1 +1,1 @@
-# tests
+# Just a dummy site
