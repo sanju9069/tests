@@ -373,7 +373,7 @@ section {
       .item3,
       .item4 {
         width: 32%;
-        flex: 0 0 32%;
+        // flex: 0 0 32%;
         padding: 2rem;
         text-align: center;
         margin: 0.8rem 0;
@@ -393,7 +393,7 @@ section {
       }
       .item5 {
         width: 66%;
-        flex: 0 0 66%;
+        // flex: 0 0 66%;
         background: #fff5e7;
         padding: 2rem;
         margin: 0.8rem 0;
@@ -431,7 +431,7 @@ section {
         padding: 1rem 0 0;
         @include justifyAlign(space-between);
         button {
-          background-color: inherit;
+          background-color: transparent;
           display: inline-block;
           border: none;
           outline: none;

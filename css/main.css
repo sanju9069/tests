@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .w-100 {
@@ -17,61 +17,24 @@ body {
   font-family: sans-serif;
 }
 
-.wrap,
-header,
-header .bookName,
-section,
-.firstSection .firstSectionContent,
-.firstSection .firstSectionContent .contentLeft .headAfter,
-.firstSection .firstSectionContent .contentLeft ul,
-.firstSection .firstSectionContent .contentRight .payLabel,
-.secondSection .secondSectionContent .allBox,
-.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards,
-.fourthSection .fourthSectionContent .faqContent {
+.wrap, header, header .bookName, section, .firstSection .firstSectionContent, .firstSection .firstSectionContent .contentLeft .headAfter, .firstSection .firstSectionContent .contentLeft ul, .firstSection .firstSectionContent .contentRight .payLabel, .secondSection .secondSectionContent .allBox, .thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards, .fourthSection .fourthSectionContent .faqContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-header,
-.firstSection .firstSectionContent,
-.secondSection .secondSectionContent,
-.thirdSection .thirdSectionContent,
-.fourthSection .fourthSectionContent {
+header, .firstSection .firstSectionContent, .secondSection .secondSectionContent, .thirdSection .thirdSectionContent, .fourthSection .fourthSectionContent {
   width: 100%;
   max-width: 1140px;
 }
 
-header .bookName span,
-.firstSection .firstSectionContent .contentLeft .getAccess,
-.firstSection
-  .firstSectionContent
-  .contentRight
-  .payLabel
-  .payLabel-right
-  p:last-child
-  span,
-.fourthSection
-  .fourthSectionContent
-  .faqContent
-  .faqRight
-  .faqTabContent
-  .accordion
-  .active {
+header .bookName span, .firstSection .firstSectionContent .contentLeft .getAccess, .firstSection .firstSectionContent .contentRight .payLabel .payLabel-right p:last-child span, .fourthSection .fourthSectionContent .faqContent .faqRight .faqTabContent .accordion .active {
   font-weight: 600;
 }
 
-.firstSection .firstSectionContent .contentRight .submitButton button,
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .contentTab
-  .tabcontent
-  .testCards
-  .testCardRight
-  .unlockBtn {
+.firstSection .firstSectionContent .contentRight .submitButton button, .thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardRight .unlockBtn {
   width: 100%;
   background: #ffffff;
   padding: 1rem;
@@ -82,42 +45,30 @@ header .bookName span,
   cursor: pointer;
 }
 
-.firstSection .firstSectionContent .contentRight .submitButton button,
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .contentTab
-  .tabcontent
-  .testCards
-  .testCardRight
-  .unlockBtn,
-.firstSection .firstSectionContent .contentRight .payLabel,
-.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards,
-.fourthSection .fourthSectionContent .faqContent .faqLeft .faqTabBtn,
-.fourthSection .fourthSectionContent .faqContent .faqRight {
+.firstSection .firstSectionContent .contentRight .submitButton button, .thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardRight .unlockBtn, .firstSection .firstSectionContent .contentRight .payLabel, .thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards, .fourthSection .fourthSectionContent .faqContent .faqLeft .faqTabBtn, .fourthSection .fourthSectionContent .faqContent .faqRight {
   -webkit-box-shadow: 0px 0px 2px #86a1ae;
-  box-shadow: 0px 0px 2px #86a1ae;
+          box-shadow: 0px 0px 2px #86a1ae;
   border-radius: 0.25rem;
 }
 
 .wrap {
   width: 100%;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 30px 0 20px;
 }
 
 header .bookName {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .bookName img {
@@ -138,19 +89,13 @@ header .bookName span {
 section {
   width: 100%;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .firstSection {
   position: relative;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#d6f4fa),
-    to(transparent)
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6f4fa), to(transparent));
   background-image: linear-gradient(to bottom, #d6f4fa, transparent);
 }
 
@@ -172,8 +117,8 @@ section {
 
 .firstSection .firstSectionContent {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 5rem;
 }
 
@@ -208,8 +153,7 @@ section {
   font-size: 12px;
 }
 
-.firstSection .firstSectionContent .contentLeft ul li::before,
-.firstSection .firstSectionContent .contentLeft ul li::after {
+.firstSection .firstSectionContent .contentLeft ul li::before, .firstSection .firstSectionContent .contentLeft ul li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -267,8 +211,8 @@ section {
 
 .firstSection .firstSectionContent .contentRight .payLabel {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   background: #ffffff;
   padding: 1rem;
@@ -313,23 +257,11 @@ section {
   display: none;
 }
 
-.firstSection
-  .firstSectionContent
-  .contentRight
-  .payLabel
-  label
-  input:checked
-  ~ .radioBox {
+.firstSection .firstSectionContent .contentRight .payLabel label input:checked ~ .radioBox {
   border: solid 2px #25cd71;
 }
 
-.firstSection
-  .firstSectionContent
-  .contentRight
-  .payLabel
-  label
-  input:checked
-  ~ .radioBox::before {
+.firstSection .firstSectionContent .contentRight .payLabel label input:checked ~ .radioBox::before {
   display: block;
 }
 
@@ -343,13 +275,7 @@ section {
   margin-bottom: 0.5rem;
 }
 
-.firstSection
-  .firstSectionContent
-  .contentRight
-  .payLabel
-  .payLabel-left
-  h3
-  img {
+.firstSection .firstSectionContent .contentRight .payLabel .payLabel-left h3 img {
   max-width: 25px;
   position: relative;
   top: 5px;
@@ -364,53 +290,30 @@ section {
   text-align: right;
 }
 
-.firstSection
-  .firstSectionContent
-  .contentRight
-  .payLabel
-  .payLabel-right
-  p:first-child {
+.firstSection .firstSectionContent .contentRight .payLabel .payLabel-right p:first-child {
   margin-bottom: 1rem;
 }
 
-.firstSection
-  .firstSectionContent
-  .contentRight
-  .payLabel
-  .payLabel-right
-  p:first-child
-  span:first-child {
+.firstSection .firstSectionContent .contentRight .payLabel .payLabel-right p:first-child span:first-child {
   font-size: 12px;
   color: #86a1ae;
   padding-right: 0.5rem;
   position: relative;
 }
 
-.firstSection
-  .firstSectionContent
-  .contentRight
-  .payLabel
-  .payLabel-right
-  p:first-child
-  span:first-child::before {
+.firstSection .firstSectionContent .contentRight .payLabel .payLabel-right p:first-child span:first-child::before {
   content: "";
   position: absolute;
   width: 95%;
   height: 1px;
   background: #86a1ae;
   -webkit-transform: rotate(-8deg);
-  transform: rotate(-8deg);
+          transform: rotate(-8deg);
   bottom: 8px;
   left: -2px;
 }
 
-.firstSection
-  .firstSectionContent
-  .contentRight
-  .payLabel
-  .payLabel-right
-  p:first-child
-  .discountColor {
+.firstSection .firstSectionContent .contentRight .payLabel .payLabel-right p:first-child .discountColor {
   font-size: 8px;
   background: #3581fd;
   color: #ffffff;
@@ -418,23 +321,12 @@ section {
   border-radius: 0.2rem;
 }
 
-.firstSection
-  .firstSectionContent
-  .contentRight
-  .payLabel
-  .payLabel-right
-  p:last-child {
+.firstSection .firstSectionContent .contentRight .payLabel .payLabel-right p:last-child {
   font-size: 12px;
   color: #86a1ae;
 }
 
-.firstSection
-  .firstSectionContent
-  .contentRight
-  .payLabel
-  .payLabel-right
-  p:last-child
-  span {
+.firstSection .firstSectionContent .contentRight .payLabel .payLabel-right p:last-child span {
   padding-left: 0.5rem;
   font-size: 18px;
   color: #000;
@@ -454,19 +346,13 @@ section {
   text-decoration: none;
 }
 
-.firstSection
-  .firstSectionContent
-  .contentRight
-  .payLabel
-  .payLabel-right
-  p:first-child
-  .discountColorGreen {
+.firstSection .firstSectionContent .contentRight .payLabel .payLabel-right p:first-child .discountColorGreen {
   background: #25cd71;
 }
 
 .firstSection .firstSectionContent .contentRight .borderGreen {
   -webkit-box-shadow: 0px 0px 3px #25cd71;
-  box-shadow: 0px 0px 3px #25cd71;
+          box-shadow: 0px 0px 3px #25cd71;
 }
 
 .secondSection {
@@ -479,8 +365,8 @@ section {
 
 .secondSection .secondSectionContent .allBox {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 2rem;
 }
 
@@ -499,9 +385,6 @@ section {
 .secondSection .secondSectionContent .allBox .item3,
 .secondSection .secondSectionContent .allBox .item4 {
   width: 32%;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 32%;
-  flex: 0 0 32%;
   padding: 2rem;
   text-align: center;
   margin: 0.8rem 0;
@@ -526,9 +409,6 @@ section {
 
 .secondSection .secondSectionContent .allBox .item5 {
   width: 66%;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 66%;
-  flex: 0 0 66%;
   background: #fff5e7;
   padding: 2rem;
   margin: 0.8rem 0;
@@ -537,8 +417,8 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .secondSection .secondSectionContent .allBox .item5 div:last-child {
@@ -555,8 +435,8 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .thirdSection .thirdSectionContent .tabWrap .sectionHead h3 {
@@ -571,18 +451,18 @@ section {
 .thirdSection .thirdSectionContent .tabWrap .tab {
   overflow: hidden;
   -webkit-box-shadow: 0px 1px 2px #86a1ae;
-  box-shadow: 0px 1px 2px #86a1ae;
+          box-shadow: 0px 1px 2px #86a1ae;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   padding: 1rem 0 0;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .thirdSection .thirdSectionContent .tabWrap .tab button {
-  background-color: inherit;
+  background-color: transparent;
   display: inline-block;
   border: none;
   outline: none;
@@ -625,60 +505,20 @@ section {
   outline: none;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .tab
-  .searchDiv
-  :-ms-input-placeholder,
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .tab
-  .searchDiv
-  ::-webkit-input-placeholder,
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .tab
-  .searchDiv
-  :-ms-input-placeholder {
+.thirdSection .thirdSectionContent .tabWrap .tab .searchDiv :-ms-input-placeholder,
+.thirdSection .thirdSectionContent .tabWrap .tab .searchDiv ::-webkit-input-placeholder,
+.thirdSection .thirdSectionContent .tabWrap .tab .searchDiv :-ms-input-placeholder {
   color: #86a1ae;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .tab
-  .searchDiv
-  :-ms-input-placeholder,
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .tab
-  .searchDiv
-  ::-webkit-input-placeholder,
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .tab
-  .searchDiv
-  ::-ms-input-placeholder {
+.thirdSection .thirdSectionContent .tabWrap .tab .searchDiv :-ms-input-placeholder,
+.thirdSection .thirdSectionContent .tabWrap .tab .searchDiv ::-webkit-input-placeholder,
+.thirdSection .thirdSectionContent .tabWrap .tab .searchDiv ::-ms-input-placeholder {
   color: #86a1ae;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .tab
-  .searchDiv
-  :-ms-input-placeholder,
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .tab
-  .searchDiv
-  ::-webkit-input-placeholder,
+.thirdSection .thirdSectionContent .tabWrap .tab .searchDiv :-ms-input-placeholder,
+.thirdSection .thirdSectionContent .tabWrap .tab .searchDiv ::-webkit-input-placeholder,
 .thirdSection .thirdSectionContent .tabWrap .tab .searchDiv ::placeholder {
   color: #86a1ae;
 }
@@ -693,26 +533,14 @@ section {
   margin-top: 1.5rem;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .contentTab
-  .tabcontent
-  .filterTag
-  span {
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .filterTag span {
   color: #86a1ae;
   font-size: 14px;
   cursor: pointer;
   margin-right: 1rem;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .contentTab
-  .tabcontent
-  .filterTag
-  .active {
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .filterTag .active {
   background: #86a1ae;
   color: #ffffff;
   padding: 0.2rem 1rem;
@@ -721,112 +549,56 @@ section {
 
 .thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1rem;
   margin: 1rem 0;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .contentTab
-  .tabcontent
-  .testCards
-  .testCardLeft
-  h5 {
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardLeft h5 {
   font-size: 16px;
   color: #000;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .contentTab
-  .tabcontent
-  .testCards
-  .testCardLeft
-  .instructions {
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardLeft .instructions {
   margin-top: 0.5rem;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .contentTab
-  .tabcontent
-  .testCards
-  .testCardLeft
-  .instructions
-  span {
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardLeft .instructions span {
   font-size: 12px;
   color: #86a1ae;
   padding-right: 1rem;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .contentTab
-  .tabcontent
-  .testCards
-  .testCardRight {
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardRight {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .contentTab
-  .tabcontent
-  .testCards
-  .testCardRight
-  .availFrom {
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardRight .availFrom {
   font-size: 10px;
   color: #86a1ae;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .contentTab
-  .tabcontent
-  .testCards
-  .testCardRight
-  .lockIcon {
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardRight .lockIcon {
   color: #86a1ae;
   font-size: 18px;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .contentTab
-  .tabcontent
-  .testCards
-  .testCardRight
-  span {
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardRight span {
   padding-right: 1rem;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .contentTab
-  .tabcontent
-  .testCards
-  .testCardRight
-  .unlockBtn {
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardRight .unlockBtn {
   -webkit-box-shadow: 0px 0px 2px #0ad0f4;
-  box-shadow: 0px 0px 2px #0ad0f4;
+          box-shadow: 0px 0px 2px #0ad0f4;
   color: #0ad0f4;
   margin-bottom: 0;
   font-size: 16px;
@@ -834,11 +606,7 @@ section {
   width: auto;
 }
 
-.thirdSection
-  .thirdSectionContent
-  .tabWrap
-  .contentTab
-  .tabcontent:first-child {
+.thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent:first-child {
   display: block;
 }
 
@@ -862,8 +630,8 @@ section {
 .fourthSection .fourthSectionContent .faqContent .faqLeft {
   width: 20%;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 20%;
-  flex: 0 0 20%;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
 }
 
 .fourthSection .fourthSectionContent .faqContent .faqLeft .faqTabBtn {
@@ -893,7 +661,7 @@ section {
 
 .fourthSection .fourthSectionContent .faqContent .faqLeft .active {
   -webkit-box-shadow: 0px 1px 4px #25cd71;
-  box-shadow: 0px 1px 4px #25cd71;
+          box-shadow: 0px 1px 4px #25cd71;
 }
 
 .fourthSection .fourthSectionContent .faqContent .faqLeft .active h5,
@@ -904,8 +672,8 @@ section {
 
 .fourthSection .fourthSectionContent .faqContent .faqRight {
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 0px;
-  flex: 1 0 0;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
   margin-left: 1rem;
   padding: 1rem;
 }
@@ -914,112 +682,55 @@ section {
   display: none;
 }
 
-.fourthSection
-  .fourthSectionContent
-  .faqContent
-  .faqRight
-  .faqTabContent:first-child {
+.fourthSection .fourthSectionContent .faqContent .faqRight .faqTabContent:first-child {
   display: block;
 }
 
-.fourthSection
-  .fourthSectionContent
-  .faqContent
-  .faqRight
-  .faqTabContent
-  .accordion {
+.fourthSection .fourthSectionContent .faqContent .faqRight .faqTabContent .accordion {
   padding: 1rem;
   border-bottom: solid 1px #86a1ae;
 }
 
-.fourthSection
-  .fourthSectionContent
-  .faqContent
-  .faqRight
-  .faqTabContent
-  .accordion:last-child {
+.fourthSection .fourthSectionContent .faqContent .faqRight .faqTabContent .accordion:last-child {
   border-bottom: 0px;
 }
 
-.fourthSection
-  .fourthSectionContent
-  .faqContent
-  .faqRight
-  .faqTabContent
-  .accordion
-  h4 {
+.fourthSection .fourthSectionContent .faqContent .faqRight .faqTabContent .accordion h4 {
   font-weight: 100;
   font-size: 16px;
   cursor: pointer;
 }
 
-.fourthSection
-  .fourthSectionContent
-  .faqContent
-  .faqRight
-  .faqTabContent
-  .accordion
-  h4
-  span {
+.fourthSection .fourthSectionContent .faqContent .faqRight .faqTabContent .accordion h4 span {
   float: right;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #c2d0d6;
 }
 
-.fourthSection
-  .fourthSectionContent
-  .faqContent
-  .faqRight
-  .faqTabContent
-  .accordion
-  .active
-  span {
+.fourthSection .fourthSectionContent .faqContent .faqRight .faqTabContent .accordion .active span {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   color: #86a1ae;
 }
 
-.fourthSection
-  .fourthSectionContent
-  .faqContent
-  .faqRight
-  .faqTabContent
-  .accordion
-  .accContent {
+.fourthSection .fourthSectionContent .faqContent .faqRight .faqTabContent .accordion .accContent {
   display: none;
 }
 
-.fourthSection
-  .fourthSectionContent
-  .faqContent
-  .faqRight
-  .faqTabContent
-  .accordion
-  .accContent
-  p {
+.fourthSection .fourthSectionContent .faqContent .faqRight .faqTabContent .accordion .accContent p {
   font-size: 14px;
   color: #86a1ae;
   margin: 1rem 0;
   line-height: 1.6;
 }
 
-.fourthSection
-  .fourthSectionContent
-  .faqContent
-  .faqRight
-  .faqTabContent
-  .accordion
-  .show {
+.fourthSection .fourthSectionContent .faqContent .faqRight .faqTabContent .accordion .show {
   display: block;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
-  header,
-  .firstSection .firstSectionContent,
-  .secondSection .secondSectionContent,
-  .thirdSection .thirdSectionContent,
-  .fourthSection .fourthSectionContent {
+  header, .firstSection .firstSectionContent, .secondSection .secondSectionContent, .thirdSection .thirdSectionContent, .fourthSection .fourthSectionContent {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -1034,18 +745,14 @@ section {
   }
   .fourthSection .fourthSectionContent .faqContent .faqLeft {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 30%;
-    flex: 0 0 30%;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
     width: 30%;
   }
 }
 
 @media (max-width: 767px) {
-  header,
-  .firstSection .firstSectionContent,
-  .secondSection .secondSectionContent,
-  .thirdSection .thirdSectionContent,
-  .fourthSection .fourthSectionContent {
+  header, .firstSection .firstSectionContent, .secondSection .secondSectionContent, .thirdSection .thirdSectionContent, .fourthSection .fourthSectionContent {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -1086,19 +793,19 @@ section {
   .secondSection .secondSectionContent .allBox .item4 {
     width: 100%;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
   .secondSection .secondSectionContent .allBox .item5 {
     width: 100%;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .secondSection .secondSectionContent .allBox .item5 div:last-child {
     padding-left: 0rem;
@@ -1119,43 +826,18 @@ section {
   .thirdSection .thirdSectionContent .tabWrap .tab .searchDiv {
     display: none;
   }
-  .thirdSection
-    .thirdSectionContent
-    .tabWrap
-    .contentTab
-    .tabcontent
-    .testCards
-    .testCardLeft,
-  .thirdSection
-    .thirdSectionContent
-    .tabWrap
-    .contentTab
-    .tabcontent
-    .testCards
-    .testCardRight {
+  .thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardLeft,
+  .thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardRight {
     width: 100%;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .thirdSection
-    .thirdSectionContent
-    .tabWrap
-    .contentTab
-    .tabcontent
-    .testCards
-    .testCardRight {
+  .thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardRight {
     margin-top: 1rem;
     display: block;
   }
-  .thirdSection
-    .thirdSectionContent
-    .tabWrap
-    .contentTab
-    .tabcontent
-    .testCards
-    .testCardRight
-    .btnLock {
+  .thirdSection .thirdSectionContent .tabWrap .contentTab .tabcontent .testCards .testCardRight .btnLock {
     float: right;
   }
   .fourthSection .fourthSectionContent .faqContent .faqLeft {
@@ -1163,18 +845,18 @@ section {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .fourthSection .fourthSectionContent .faqContent .faqLeft .faqTabBtn {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 45%;
-    flex: 0 0 45%;
+        -ms-flex: 0 0 45%;
+            flex: 0 0 45%;
     padding: 0.5rem;
     text-align: center;
   }
