@@ -43,6 +43,7 @@ $(document).ready(function () {
     $('.accContent'+'[data-faq-accordion="' + getAttr + '"]').slideDown(200);
   });
   
-  console.log("yes")
+  console.log("yes");
+  console.log("yes");
 
 });
